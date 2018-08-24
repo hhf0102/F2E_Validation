@@ -1,0 +1,64 @@
+// Create Account Page------------------------------------------
+.processBar_CreateAccount {
+  .bar {
+    position: relative;
+    width: $barWidth;
+    height: 2px;
+    background: $subColor;
+    margin: 0 auto 48px auto;
+    .circle:nth-child(1) {
+      @extend %circleOutter;
+      left: $barWidth * 0 / 3;
+      border-color: $mainColor;
+      &::after {
+        @extend %circleInner;
+      }
+    }
+    .circle:nth-child(2) {
+      @extend %circleOutter;
+      left: $barWidth * 1 / 3;
+    }
+    .circle:nth-child(3) {
+      @extend %circleOutter;
+      left: $barWidth * 2 / 3;
+    }
+    .circle:nth-child(4) {
+      @extend %circleOutter;
+      left: $barWidth * 3 / 3;
+    }
+    .circle {
+      z-index: 99;
+    }
+  }
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.formCreate{
+  .account {
+    position: relative;
+    margin-bottom: 24px;
+  }
+  .password {
+    position: relative;
+    margin-bottom: 24px;
+  }
+  .confirmPassword {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  .warningText {
+    top: 49%;
+    left: 500px;
+  }
+  .warningIcon {
+    &::after {
+      top: 56%;
+      left: 92%;
+    }
+  }
+}
+

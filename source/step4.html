@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Payment Method</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+  <div class="container">
+    <div class="processBar_Payment">
+      <div class="bar">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </div>
+    <div class="title">
+      <h1>Payment Method</h1>
+      <span>Add your credit card information!</span>
+    </div>
+    <form class="form formPayment">
+      <div class="row">
+        <div class="cardNum">
+          <label for="cardNum">Card Number</label>
+          <input type="text" id="cardNum" name="cardNum" maxlength="19">
+          <div class="warningSet" style="display: none;">
+            <div class="warningIcon"></div>
+            <div class="warningText">INVALID NUMBER</div>
+          </div>
+          <i class="fab fa-cc-visa" id="visa"></i>
+          <i class="fab fa-cc-mastercard" id="master"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="cardHolder_bank">
+          <div class="cardHolderName">
+            <label for="cardHolderName">Cardholder Name</label>
+            <input type="text" id="cardHolderName" name="cardHolderName">
+          </div>
+          <div class="bankName">
+            <label for="bankName">Bank Name</label>
+            <input type="text" id="bankName" name="bankName">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="cvv">
+          <label for="cvv">CVV</label>
+          <input type="text" id="cvv" name="cvv" maxlength="3">
+        </div>
+        <div class="expireDate">
+          <label for="expireDate">Expire Date</label>
+          <div>
+            <select name="year">
+              <option value="0" disabled selected>YY</option>
+            </select>
+            <select name="month">
+              <option value="0" disabled selected>MM</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <a href="javascript:;" class="nextBtn">DONE</a>
+    </form>
+  </div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js'></script>
+  <script src="./js/all.js"></script>
+</body>
+</html>

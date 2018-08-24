@@ -1,0 +1,22 @@
+@mixin fontSet($size, $weight) {
+  font-size: $size;
+  font-weight: $weight;
+}
+
+@mixin font_awesome($unicode, $size, $weight) {
+  content: $unicode;
+  font-family: 'Font Awesome 5 Free';
+  font-size: $size;
+  font-weight: $weight;
+}
+
+@mixin inputBorder($width, $height) {
+  width: $width;
+  height: $height;
+  border-radius: 10px;
+  border: 2px solid black;
+  outline: none;
+  padding: 12px 20px;
+  font-size: 20px;
+  background-color: transparent;
+}

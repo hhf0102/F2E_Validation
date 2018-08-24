@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>General Information</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+  <div class="container">
+    <div class="processBar_GeneralInformation">
+      <div class="bar">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </div>
+    <div class="title">
+      <h1>General Information</h1>
+      <span>Tell us who you are!</span>
+    </div>
+    <form class="form formGeneral">
+      <div class="row">
+        <div class="name">
+          <label for="name">Name <span>*</span></label>
+          <input type="text" name="name" autocomplete="off">
+        </div>
+        <div class="phone">
+          <label for="phone">Phone <span>*</span></label>
+          <input type="tel" name="phone" placeholder="0912345678" maxlength="10">
+          <div class="warningSet" style="display: none;">
+            <div class="warningIcon"></div>
+            <div class="warningText">INVALID PHONE NUMBER</div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="birthDate">
+          <label for="birthDate">Birth Date <span>*</span></label>
+          <div>
+            <select name="year" id="year">
+              <option value="0" disabled selected>YYYY</option>
+            </select>
+            <select name="month" id="month">
+              <option value="0" disabled selected>MM</option>
+            </select>
+            <select name="day" id="day">
+              <option value="0" disabled selected>DD</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="address">
+          <label for="address">Address <span>*</span></label>
+          <div>
+            <select name="city" id="city"></select>
+            <select name="dist" id="dist">
+              <option value="0" disabled selected>Dist</option>
+            </select>
+          </div>
+          <input type="text" placeholder="Address Detail" name="address">
+        </div>
+      </div>
+      <a href="./step3.html" class="nextBtn">NEXT</a>
+    </form>
+  </div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js'></script>
+  <script src="./js/all.js"></script>
+</body>
+</html>

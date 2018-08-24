@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Update Profile Picture</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+  <div class="container">
+    <div class="processBar_UpdatePic">
+      <div class="bar">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </div>
+    <div class="title">
+      <h1>Update Profile Picture</h1>
+      <span>We wanna know you more!</span>
+    </div>
+    <form class="form formUpdate">
+      <div class="file">
+        <input type="file" multiple>
+        <div>
+          <div class="icon"></div>
+          <div>
+            <p>UPLOAD UP TO 3 PHOTOS</p>
+            <p>MAX SIZE: 150*150px</p>
+          </div>
+        </div>
+      </div>
+      <div class="warn" style="display: none;"></div>
+      <ul class="photoList">
+        <li class="img">
+          <img src="">
+          <div class="delete" style="display: none;"><i class="fas fa-trash-alt"></i></div>
+        </li>
+        <li class="img">
+          <img src="">
+          <div class="delete" style="display: none;"><i class="fas fa-trash-alt"></i></div>
+        </li>
+        <li class="img">
+          <img src="">
+          <div class="delete" style="display: none;"><i class="fas fa-trash-alt"></i></div>
+        </li>
+      </ul>
+      <a href="javascript:;" class="nextBtn">Next</a>
+    </form>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js'></script>
+  <script src="./js/all.js"></script>
+</body>
+</html>

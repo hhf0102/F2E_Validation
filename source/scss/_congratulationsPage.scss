@@ -1,0 +1,87 @@
+// Congratulations Page------------------------------------------
+.processBar_Congratulations {
+  .bar {
+    position: relative;
+    width: $barWidth;
+    height: 2px;
+    background: $subColor;
+    margin: 0 auto 48px auto;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100% * 3 / 3;
+      height: 2px;
+      background-color: $mainColor;
+    }
+    .circle:nth-child(1) {
+      position: absolute;
+      top: 1px;
+      transform: translateX(-50%) translateY(-50%);
+      background-color: #fff;
+      &::after {
+        @include font_awesome('\f058', 16px, 900);
+        position: relative;
+        color: $mainColor;
+        left: 1px;
+      }
+    }
+    .circle:nth-child(2) {
+      position: absolute;
+      top: 1px;
+      left: 235px * 1 / 3;
+      transform: translateX(-50%) translateY(-50%);
+      background-color: #fff;
+      &::after {
+        @include font_awesome('\f058', 16px, 900);
+        position: relative;
+        color: $mainColor;
+        left: 1px;
+      }
+    }
+    .circle:nth-child(3) {
+      position: absolute;
+      top: 1px;
+      left: 235px * 2 / 3;
+      transform: translateX(-50%) translateY(-50%);
+      background-color: #fff;
+      &::after {
+        @include font_awesome('\f058', 16px, 900);
+        position: relative;
+        color: $mainColor;
+        left: 1px;
+      }
+    }
+    .circle:nth-child(4) {
+      position: absolute;
+      top: 1px;
+      left: 235px * 3 / 3;
+      transform: translateX(-50%) translateY(-50%);
+      background-color: #fff;
+      &::after {
+        @include font_awesome('\f058', 16px, 900);
+        position: relative;
+        color: $mainColor;
+        left: 1px;
+      }
+    }
+    .circle {
+      z-index: 99;
+    }
+  }
+}
+
+.smile {
+  text-align: center;
+  margin-bottom: 40px;
+  &::after {
+    @include font_awesome('\f118', 230px, 900);
+    color: $subColor;
+  }
+}
+
+.redirect {
+  @include fontSet(20px, 300);
+  font-style: italic;
+  color: $mainColor;
+  text-align: center;
+}
